@@ -1,0 +1,34 @@
+22:22:45 **** Incremental Build of configuration Debug for project 3.3_ADC_BareMetal_SCAN_DMA ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I"D:/Newton/Courses/HArdware guide/ADC/3.3_ADC_BareMetal_SCAN_DMA/Device" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:30:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   30 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'DMA_Init':
+../Src/main.c:62:27: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'volatile uint32_t *' {aka 'volatile long unsigned int *'} makes integer from pointer without a cast [-Wint-conversion]
+   62 |         DMA2_Stream0->PAR = &(ADC1->DR);
+      |                           ^
+../Src/main.c:65:28: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'uint16_t *' {aka 'short unsigned int *'} makes integer from pointer without a cast [-Wint-conversion]
+   65 |         DMA2_Stream0->M0AR = data;
+      |                            ^
+../Src/main.c: In function 'main':
+../Src/main.c:134:13: warning: unused variable 'i' [-Wunused-variable]
+  134 |         int i=0;
+      |             ^
+../Src/main.c:133:20: warning: variable 'ADCVal' set but not used [-Wunused-but-set-variable]
+  133 |         ADC_Vals_t ADCVal;
+      |                    ^~~~~~
+arm-none-eabi-gcc -o "3.3_ADC_BareMetal_SCAN_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Newton\Courses\HArdware guide\ADC\3.3_ADC_BareMetal_SCAN_DMA\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3.3_ADC_BareMetal_SCAN_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 3.3_ADC_BareMetal_SCAN_DMA.elf
+ 
+arm-none-eabi-size  3.3_ADC_BareMetal_SCAN_DMA.elf 
+arm-none-eabi-objdump -h -S 3.3_ADC_BareMetal_SCAN_DMA.elf  > "3.3_ADC_BareMetal_SCAN_DMA.list"
+   text	   data	    bss	    dec	    hex	filename
+   2984	      8	   1576	   4568	   11d8	3.3_ADC_BareMetal_SCAN_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: 3.3_ADC_BareMetal_SCAN_DMA.list
+ 
+
+22:22:46 Build Finished. 0 errors, 5 warnings. (took 1s.36ms)
+

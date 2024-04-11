@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_ADC_SingleConversion_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3_ADC_BareMetal_SingleConversion_DMA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_DMA2_MEM2MEM Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3.3_ADC_BareMetal_SCAN_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3.4_ADC_BareMetal_SCAN_DMA2 with timer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_ADC_BareMetal_ContinousConversion Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_ADC_BareMetal_SCANmode Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_ADC_BareMetal_SCANmode_Single Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1.1_ADC_BareMetal_Single_Continuous Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_ADC_Single_Continuous Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_ADC_SingleConversion,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_BareMetal Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1.1_ADC_BareMetal_Single_Continuous\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1.1_ADC_BareMetal_Single_Continuous\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_ADC_BareMetal_ContinousConversion\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_DMA2_MEM2MEM\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_BareMetal\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_BareMetal\ Debug/activeLaunchTarget=null\:---

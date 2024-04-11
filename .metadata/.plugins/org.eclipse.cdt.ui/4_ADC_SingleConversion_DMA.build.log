@@ -1,0 +1,31 @@
+19:02:02 **** Incremental Build of configuration Debug for project 4_ADC_SingleConversion_DMA ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I"D:/Newton/Courses/HArdware guide/ADC/4_ADC_SingleConversion_DMA/Device" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:30:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   30 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'DMA_Init':
+../Src/main.c:62:27: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'volatile uint32_t *' {aka 'volatile long unsigned int *'} makes integer from pointer without a cast [-Wint-conversion]
+   62 |         DMA2_Stream0->PAR = &(ADC1->DR);
+      |                           ^
+../Src/main.c:65:28: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'volatile uint16_t *' {aka 'volatile short unsigned int *'} makes integer from pointer without a cast [-Wint-conversion]
+   65 |         DMA2_Stream0->M0AR = data;
+      |                            ^
+../Src/main.c: In function 'main':
+../Src/main.c:114:16: warning: unused variable 'ADC_volt' [-Wunused-variable]
+  114 |         float  ADC_volt;
+      |                ^~~~~~~~
+arm-none-eabi-gcc -o "4_ADC_SingleConversion_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Newton\Courses\HArdware guide\ADC\4_ADC_SingleConversion_DMA\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_ADC_SingleConversion_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4_ADC_SingleConversion_DMA.elf
+ 
+arm-none-eabi-size  4_ADC_SingleConversion_DMA.elf 
+arm-none-eabi-objdump -h -S 4_ADC_SingleConversion_DMA.elf  > "4_ADC_SingleConversion_DMA.list"
+   text	   data	    bss	    dec	    hex	filename
+   1124	      8	   1576	   2708	    a94	4_ADC_SingleConversion_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4_ADC_SingleConversion_DMA.list
+ 
+
+19:02:03 Build Finished. 0 errors, 4 warnings. (took 619ms)
+

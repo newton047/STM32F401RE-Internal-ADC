@@ -1,0 +1,24 @@
+22:31:36 **** Incremental Build of configuration Debug for project 1.1_ADC_BareMetal_Single_Continuous ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I"D:/Newton/Courses/HArdware guide/ADC/1.1_ADC_BareMetal_Single_Continuous/Device" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:24:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   24 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:30:16: warning: variable 'ADC_volt' set but not used [-Wunused-but-set-variable]
+   30 |         float  ADC_volt;
+      |                ^~~~~~~~
+arm-none-eabi-gcc -o "1.1_ADC_BareMetal_Single_Continuous.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Newton\Courses\HArdware guide\ADC\1.1_ADC_BareMetal_Single_Continuous\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1.1_ADC_BareMetal_Single_Continuous.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1.1_ADC_BareMetal_Single_Continuous.elf
+ 
+arm-none-eabi-size  1.1_ADC_BareMetal_Single_Continuous.elf 
+arm-none-eabi-objdump -h -S 1.1_ADC_BareMetal_Single_Continuous.elf  > "1.1_ADC_BareMetal_Single_Continuous.list"
+   text	   data	    bss	    dec	    hex	filename
+   2484	      8	   1568	   4060	    fdc	1.1_ADC_BareMetal_Single_Continuous.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1.1_ADC_BareMetal_Single_Continuous.list
+ 
+
+22:31:37 Build Finished. 0 errors, 2 warnings. (took 585ms)
+

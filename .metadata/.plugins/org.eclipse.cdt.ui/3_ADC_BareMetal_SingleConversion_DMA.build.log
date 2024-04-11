@@ -1,0 +1,10 @@
+21:11:11 **** Incremental Build of configuration Debug for project 3_ADC_BareMetal_SingleConversion_DMA ****
+make -j16 all 
+arm-none-eabi-size  3_ADC_BareMetal_SingleConversion_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1124	      8	   1576	   2708	    a94	3_ADC_BareMetal_SingleConversion_DMA.elf
+Finished building: default.size.stdout
+ 
+
+21:11:11 Build Finished. 0 errors, 0 warnings. (took 373ms)
+

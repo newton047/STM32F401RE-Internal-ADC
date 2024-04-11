@@ -1,0 +1,24 @@
+22:43:00 **** Incremental Build of configuration Debug for project 2_ADC_BareMetal_SCANmode_Single ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I"D:/Newton/Courses/HArdware guide/ADC/2_ADC_BareMetal_SCANmode_Single/Device" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:30:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   30 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:41:20: warning: variable 'ADCVal' set but not used [-Wunused-but-set-variable]
+   41 |         ADC_Vals_t ADCVal;
+      |                    ^~~~~~
+arm-none-eabi-gcc -o "2_ADC_BareMetal_SCANmode_Single.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Newton\Courses\HArdware guide\ADC\2_ADC_BareMetal_SCANmode_Single\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_ADC_BareMetal_SCANmode_Single.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_ADC_BareMetal_SCANmode_Single.elf
+ 
+arm-none-eabi-size  2_ADC_BareMetal_SCANmode_Single.elf 
+arm-none-eabi-objdump -h -S 2_ADC_BareMetal_SCANmode_Single.elf  > "2_ADC_BareMetal_SCANmode_Single.list"
+   text	   data	    bss	    dec	    hex	filename
+   2600	      8	   1568	   4176	   1050	2_ADC_BareMetal_SCANmode_Single.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_ADC_BareMetal_SCANmode_Single.list
+ 
+
+22:43:01 Build Finished. 0 errors, 2 warnings. (took 713ms)
+

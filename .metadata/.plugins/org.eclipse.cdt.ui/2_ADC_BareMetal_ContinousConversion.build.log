@@ -1,0 +1,10 @@
+22:29:41 **** Incremental Build of configuration Debug for project 2_ADC_BareMetal_ContinousConversion ****
+make -j16 all 
+arm-none-eabi-size  2_ADC_BareMetal_ContinousConversion.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2608	      8	   1568	   4184	   1058	2_ADC_BareMetal_ContinousConversion.elf
+Finished building: default.size.stdout
+ 
+
+22:29:41 Build Finished. 0 errors, 0 warnings. (took 170ms)
+
